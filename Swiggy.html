@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @font-face {
+            font-family: exbold;
+            src: url(./Gilroy-ExtraBold-Rupee.woff2);
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;  
+            font-family: exbold;
+        }
+
+        #outer {
+            height: 500px;
+            width: 100%;
+            /* background: url(cm-7.avif);
+            background-size: cover; */
+            /* box-sizing: border-box; */
+        }
+
+        #top {
+            height: 80px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 180px;
+            box-sizing: border-box;
+            gap: 50px;
+           
+        }
+
+        #slider {
+            height: 330px;
+            width: 100%;
+            background: linear-gradient(white, #ccbff4);
+            border-radius: 25px;
+
+        }
+
+        .x {
+            height: 330px;
+            width: 50%;
+            /* background-color: aqua; */
+            float: left;
+            color: #3c3e48;
+           
+        }
+       
+
+        .x1 {
+            height: 330px;
+            width: 50%;
+            /* background-color: aqua; */
+            
+            background-size: cover;
+            float: left;
+        }
+        .x1 img
+        {
+            height: 330px;
+        }
+
+        #man {
+            height: 270px;
+            width: 100%;
+            background-color: white;
+            padding-left: 180px;
+            box-sizing: border-box;
+        }
+
+        .y {
+            height: 200px;
+            width: 170px;
+            float: left;
+            background-color: aqua;
+
+
+        }
+
+        #man1 {
+            height: 450px;
+            width: 100%;
+            background-color: white;
+            padding: 80px 200px;
+        }
+
+        .z {
+            height: 330px;
+            width: 340px;
+            background-color: white;
+            float: left;
+            box-sizing: border-box;
+            margin: 15px;
+
+
+        }
+        .z:hover{
+            transform: scale(.95);
+            transition: all ease .2s;
+        }
+
+        #man2 {
+            height: 1260px;
+            width: 100%;
+            /* background-color: red; */
+        }
+
+        .s {
+            height: 320px;
+            width: 80%;
+            /* background-color: aqua; */
+            margin-left: 150px;
+            box-sizing: border-box;
+        }
+
+        .s1 {
+            height: 320px;
+            width: 300px;
+            float: left;
+            /* background: yellow; */
+            padding: 0px 10px;
+            box-sizing: border-box;
+
+        }
+        .s1:hover{
+            transform: scale(.95);
+            transition: all ease .5s;
+        }
+
+        ul {
+            display: flex;
+            gap: 50px;
+            list-style: none;
+            padding: 20px 180px;
+            margin-bottom: 40px;
+
+        }
+
+        li {
+            height: 35px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        #text {
+            height: 300px;
+            width: 85%;
+            /* background-color: rebeccapurple; */
+            margin-left: 80px;
+            padding-left: 100px;
+            box-sizing: border-box;
+        }
+
+        #text1 {
+            height: 300px;
+            width: 85%;
+            margin-left: 110px;
+            padding-block: 20px;
+            margin-bottom: 40px;
+
+        }
+
+        #text1>h1 {
+            margin-bottom: 40px;
+        }
+
+        .a {
+            display: flex;
+            margin-top: 20px;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .a h1 {
+            font-size: 30px;
+            border: 1px solid #e5e6e6;
+            height: 50px;
+            line-height: 50px;
+            width: 280px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        footer {
+            padding: 50px 180px;
+            min-height: 500px;
+            /* background-color: var(--gray); */
+            background-color: #f0f0f5;
+            margin-top: 20px;
+            font-family: bold;
+
+            #footer-top {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 30px;
+                height: 420px;
+                /* border-bottom: 2px solid var(--gray); */
+                background-color: #f0f0f5;
+                gap: 20px;
+
+                #footer-big {
+                    width: 35%;
+                    height: 100%;
+
+                    h5 {
+                        font-weight: 100;
+                        margin-top: 10px;
+                    }
+                }
+
+                .footer-smalls {
+                    width: 15%;
+                    height: 100%;
+
+                    h3 {
+                        margin-bottom: 20px;
+                    }
+
+                    P {
+                        font-weight: 500;
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin-bottom: 20px;
+                    }
+
+                    .small-tops {
+                        height: 50%;
+                    }
+
+                    .small-bottoms {
+                        p {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #footer-bottom {
+                padding-top: 40px;
+                display: flex;
+                align-items: center;
+                gap: 100px;
+                justify-content: center;
+
+                #bf-right {
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;
+                    justify-content: center;
+
+                    img {
+                        height: 60px;
+                    }
+                }
+            }
+        }
+       hr
+       {
+        width: 80%;
+        margin-left: 150px;
+       }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="top">
+            <img src="img/sp-19.avif" alt="">
+            <h1>&nbsp;&nbsp;&nbsp; <span
+                    style="color: black; font-size: 25px;"> | Setup your precise location</span></h1>
+            <button style="height: 55px; width: 400px; background: #f0f0f5 ;color: gray; border-radius: 10px; font-size: 17px; box-sizing: border-box; border:none;"> 
+                Search for Resturent and food <i class="fa-solid fa-magnifying-glass" style=" padding-left: 130px; "></i></button>
+                <i class="fa-solid fa-user" style="padding: 5px; font-size: 45px;"></i>
+        </div>
+        <hr>
+        <div id="slider">
+            <div class="x">
+                <h1 style="padding: 60px 180px; font-size: 50px; ">Order Food <br> Online in <br> Lucknow 
+                    <div style="width: 150px;height: 50px; border-top: 3px solid orangered; border-radius: 80%;"></div></h1>
+                <!-- <p style="width: 200px; border-bottom: 5px solid green;margin: 0px 30px 200px 0px;"></p> -->
+               
+            </div>
+            <div class="x1"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1002,h_600/v1678428358/portal/m/seo_web/dweb_header.png" alt=""> </div>
+        </div>
+        <div id="man">
+            <h1 style="font-size: 30px; padding-top: 20px;">What's on your mind?</h1>
+            <div class="y">
+                <img src="img/sp-1.avif" alt="" style="height: 200px;width: 170px;">
+            </div>
+            <div class="y">
+                <img src="img/sp-2.avif" alt="" style="height: 200px;width: 170px;">
+            </div>
+            <div class="y">
+                <img src="img/sp-3.avif" alt="" style="height: 200px;width: 170px;">
+            </div>
+            <div class="y">
+                <img src="img/sp-4.avif" alt="" style="height: 200px;width: 170px;">
+            </div>
+            <div class="y">
+                <img src="img/sp-5.avif" alt="" style="height: 200px;width: 170px;">
+            </div>
+            <div class="y">
+                <img src="img/sp-6.avif" alt="" style="height: 200px;width: 170px;">
+            </div>
+            <div class="y">
+                <img src="img/sp-7.avif" alt="" style="height: 200px;width: 170px;">
+            </div>
+        </div><hr>
+        <div id="man1">
+            <h1>Top restaurant chains in Lucknow</h1>
+            <div class="z">
+
+                <img src="img/sp-9.avif" alt="" style="height: 230px; width: 340px; border-radius: 15px;">
+                <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 15px;"></i> Chinese Wok</h3>
+                <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+            </div>
+            <div class="z">
+                <img src="img/sp-10.avif" alt="" style="height: 230px;  width: 340px;  border-radius: 15px;">
+                <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 15px;"></i> Chinese Wok</h3>
+                <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+            </div>
+            <div class="z">
+                <img src="img/sp-11.avif" alt="" style="height: 230px;  width: 340px;  border-radius: 15px;">
+                <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 15px;"></i> Chinese Wok</h3>
+                <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+            </div>
+        </div>
+        <div id="man2">
+            <h1 style="padding: 0px 170px 50px;">Restaurants with online food delivery in Lucknow</h1>
+            <ul>
+                <li>Filter</li>
+                <li>Sort By </li>
+                <li>Fast Delivery</li>
+                <li>New on Swiggy</li>
+                <li>Rating 4.0+</li>
+                <li>Pure Veg</li>
+                <li>Offers</li>
+            </ul>
+            <div class="s">
+                <div class="s1">
+                    <img src="img/sp-9.avif" alt="" style="height: 200px; width: 280px; border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i> Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+                <div class="s1">
+                    <img src="img/sp-10.avif" alt="" style="height: 200px; width: 280px;  border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"> <i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i>Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+                <div class="s1">
+                    <img src="img/sp-11.avif" alt="" style="height: 200px; width: 280px;  border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i> Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+                <div class="s1">
+                    <img src="img/sp-12.avif" alt="" style="height: 200px; width: 280px;  border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i> Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+            </div>
+            <div class="s">
+                <div class="s1">
+                    <img src="img/sp-13.avif" alt="" style="height: 200px; width: 280px; border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i> Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+                <div class="s1">
+                    <img src="img/sp-14.avif" alt="" style="height: 200px; width: 280px;  border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i> Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+                <div class="s1">
+                    <img src="img/sp-15.avif" alt="" style="height: 200px; width: 280px;  border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"> <i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i>Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+                <div class="s1">
+                    <img src="img/sp-16.avif" alt="" style="height: 200px; width: 280px;  border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"><i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i> Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+            </div>
+            <div class="s">
+                <div class="s1">
+                    <img src="img/sp-17.avif" alt="" style="height: 200px; width: 280px;  border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"> <i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i>Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+                <div class="s1">
+                    <img src="img/sp-18.avif" alt="" style="height: 200px; width: 280px;  border-radius: 20px;">
+                    <h3 style="padding-left: 20px;"> <i class="fa-solid fa-star" style="color: white;background: green; padding: 5px; border-radius: 100%; font-size: 12px;"></i>Chinese Wok</h3>
+                    <h4 style="padding-left: 20px;"> 4.2 35-40 mins</h4>
+                    <p style="padding-left: 20px;">Chinese, Asian,Tibetan, Desserts <br> Alambagh</p>
+                </div>
+            </div>
+            <button style="height: 50px; width: 300px;margin-left: 600px; font-size: 25px; border-radius: 10pxs;">Show
+                Mor</button>
+        </div>
+        <div id="text">
+            <h1>
+                Food culture in Lucknow</h1>
+            <div style="padding: 30px; border: 1px solid gray;">
+                <h2 style="color: gray; padding-bottom: 20px;">Order Food Online in Lucknow to Taste Its delicacies</h2>
+                Consider yourself on your couch, enjoying your favorite show while holding a mouthwatering meal. Right,
+                it feels good! A food delivery service online makes this possible. By
+                offering food whenever or wherever you desire, food delivery offers the most significant benefit. The
+                popularity of online food delivery services is growing and is at its height.
+                Due to its popularity, it is becoming one of the convenient options which people are opting increasingly
+                these days. The demand is continually rising because the majority of
+                <p style="color: orangered; padding-top: 10px;"> See Mor</p>
+            </div>
+        </div>
+        <div id="text1">
+            <h1>
+                Explore localities in and around Lucknow</h1>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+        </div>
+        <div id="text1">
+            <h1>
+                What's Lucknow eating! People ordering in Lucknow</h1>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+        </div>
+        <div id="text1">
+            <h1>
+                Restaurant Chains in Lucknow</h1>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+        </div>
+        <div id="text1">
+            <h1>Popular Dishes in Lucknow</h1>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+        </div>
+        <div id="text1">
+            <h1>
+                More Food Options Near Me</h1>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+            <div class="a">
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+                <h1>Amarhar </h1>
+            </div>
+        </div>
+        <footer>
+            <div id="footer-top">
+                <div id="footer-big">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_260/portal/m/seo/Logos/Swiggy/Swiggy%20logo-2.png"
+                        alt="" srcset="">
+                    <h5>&copy; 2024 Swiggy Limited</h5>
+                </div>
+                <div class="footer-smalls">
+                    <h3>Company</h3>
+                    <p>About Us</p>
+                    <p>Swiggy Corporate</p>
+                    <p>Careers</p>
+                    <p>Team</p>
+                    <p>Swiggy One</p>
+                    <p>Swiggy Instamart</p>
+                    <p>Swiggy Dineout</p>
+                    <p>Swiggy Genie</p>
+                </div>
+                <div class="footer-smalls">
+                    <div class="small-tops">
+                        <h3>Contact Us</h3>
+                        <p>Help & Support</p>
+                        <p>Partner with us</p>
+                        <p>Role with us</p>
+                    </div>
+                    <div class="small-bottoms">
+                        <h3>Legal</h3>
+                        <p>Terms & Conditions</p>
+                        <p>Cookie Policy</p>
+                        <p>Privacy Policy</p>
+                        <p>Investor Relations</p>
+                    </div>
+                </div>
+                <div class="footer-smalls">
+                    <h3>Available</h3>
+                    <p>Bangolore</p>
+                    <p>Gurgoan</p>
+                    <p>Hyderabad</p>
+                    <p>Delhi</p>
+                    <p>Mumbai</p>
+                    <p>Pune</p>
+                </div>
+                <div class="footer-smalls">
+                    <div class="small-tops">
+                        <h3>Life of Swiggy</h3>
+                        <p>Explore with Swiggy</p>
+                        <p>Swiggy News</p>
+                        <p>Snacknies</p>
+
+                    </div>
+                    <div class="small-bottoms">
+                        <h3>Social Links</h3>
+                        <p>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom">
+                <h2>For better experience,download the Swiggy app now
+
+                </h2>
+                <div id="bf-right">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
+                        alt="">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"
+                        alt="" srcset="">
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
